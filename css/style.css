@@ -1,0 +1,456 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+
+
+@font-face {
+    font-family: 'LotaGrotesqueExtraLight';
+    src: url('../fonts/LotaGrotesqueExtraLight.eot');
+    src: url('../fonts/LotaGrotesqueExtraLight.eot') format('embedded-opentype'),
+         url('../fonts/LotaGrotesqueExtraLight.woff2') format('woff2'),
+         url('../fonts/LotaGrotesqueExtraLight.woff') format('woff'),
+         url('../fonts/LotaGrotesqueExtraLight.ttf') format('truetype'),
+         url('../fonts/LotaGrotesqueExtraLight.svg#LotaGrotesqueExtraLight') format('svg');
+}
+
+@font-face {
+    font-family: 'LotaGrotesqueRegular';
+    src: url('../fonts/LotaGrotesqueRegular.eot');
+    src: url('../fonts/LotaGrotesqueRegular.eot') format('embedded-opentype'),
+         url('../fonts/LotaGrotesqueRegular.woff2') format('woff2'),
+         url('../fonts/LotaGrotesqueRegular.woff') format('woff'),
+         url('../fonts/LotaGrotesqueRegular.ttf') format('truetype'),
+         url('../fonts/LotaGrotesqueRegular.svg#LotaGrotesqueRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'LotaGrotesqueBold';
+    src: url('../fonts/LotaGrotesqueBold.eot');
+    src: url('../fonts/LotaGrotesqueBold.eot') format('embedded-opentype'),
+         url('../fonts/LotaGrotesqueBold.woff2') format('woff2'),
+         url('../fonts/LotaGrotesqueBold.woff') format('woff'),
+         url('../fonts/LotaGrotesqueBold.ttf') format('truetype'),
+         url('../fonts/LotaGrotesqueBold.svg#LotaGrotesqueBold') format('svg');
+}
+
+@font-face {
+    font-family: 'LotaGrotesqueBlack';
+    src: url('../fonts/LotaGrotesqueBlack.eot');
+    src: url('../fonts/LotaGrotesqueBlack.eot') format('embedded-opentype'),
+         url('../fonts/LotaGrotesqueBlack.woff2') format('woff2'),
+         url('../fonts/LotaGrotesqueBlack.woff') format('woff'),
+         url('../fonts/LotaGrotesqueBlack.ttf') format('truetype'),
+         url('../fonts/LotaGrotesqueBlack.svg#LotaGrotesqueBlack') format('svg');
+}
+
+@font-face {
+    font-family: 'LotaGrotesqueSemiBold';
+    src: url('../fonts/LotaGrotesqueSemiBold.eot');
+    src: url('../fonts/LotaGrotesqueSemiBold.eot') format('embedded-opentype'),
+         url('../fonts/LotaGrotesqueSemiBold.woff2') format('woff2'),
+         url('../fonts/LotaGrotesqueSemiBold.woff') format('woff'),
+         url('../fonts/LotaGrotesqueSemiBold.ttf') format('truetype'),
+         url('../fonts/LotaGrotesqueSemiBold.svg#LotaGrotesqueSemiBold') format('svg');
+}
+
+@font-face {
+    font-family: 'LotaGrotesqueLight';
+    src: url('../fonts/LotaGrotesqueLight.eot');
+    src: url('../fonts/LotaGrotesqueLight.eot') format('embedded-opentype'),
+         url('../fonts/LotaGrotesqueLight.woff2') format('woff2'),
+         url('../fonts/LotaGrotesqueLight.woff') format('woff'),
+         url('../fonts/LotaGrotesqueLight.ttf') format('truetype'),
+         url('../fonts/LotaGrotesqueLight.svg#LotaGrotesqueLight') format('svg');
+}
+
+@font-face {
+    font-family: 'LotaGrotesqueRegularItalic';
+    src: url('../fonts/LotaGrotesqueRegularItalic.eot');
+    src: url('../fonts/LotaGrotesqueRegularItalic.eot') format('embedded-opentype'),
+         url('../fonts/LotaGrotesqueRegularItalic.woff2') format('woff2'),
+         url('../fonts/LotaGrotesqueRegularItalic.woff') format('woff'),
+         url('../fonts/LotaGrotesqueRegularItalic.ttf') format('truetype'),
+         url('../fonts/LotaGrotesqueRegularItalic.svg#LotaGrotesqueRegularItalic') format('svg');
+}
+
+main{overflow: hidden;
+    float: left;
+    width: 100%;
+    }
+
+body{
+    overflow: hidden;
+    overflow-y: scroll;
+    font-family: 'LotaGrotesqueBold';
+}
+
+body:root{
+
+ --yellow: #F9BA34;
+
+
+}
+
+
+header , section , footer{float: left;width: 100%;}
+
+
+.main-content-wrap{float: left;width: 100%;}
+
+.common-wrap{margin: 0 auto;max-width: 1380px;position: relative;padding: 0 20px;}
+
+.header-wrap{float:left;width: 100%;position: absolute;top: 0;left: 0;z-index: 333;}
+.heros-wrap::after{position: absolute;content: "";left: 0;top: 101px;background-color: rgb(255 255 255 / 30%);width: 100%;height: 1px;}
+.header-all{display: flex;flex-flow: row wrap;justify-content: space-between;align-items: center;width: 100%;z-index: 22222;padding: 32px 0;}
+.header-logo{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;width: 14.776119403%;}
+.header-logo figure{width: 100%;}
+.header-logo figure img{width: 100%;object-fit: cover;}
+.header-nav-all{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;width: 56.955223881%;}
+.header-nav-all nav ul{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;list-style: none;width: 100%;column-gap: 11px;}
+.header-nav-all nav ul a{text-decoration: none;font-size: 16px;line-height: 21px;font-weight: 600;font-family: 'LotaGrotesqueSemiBold';color: #FFFFFF;position: relative;letter-spacing: -0.304px;}
+.header-nav-all nav ul a li{display: flex;flex-flow: row wrap;justify-content: center;align-content: center;width: 113px;column-gap: 10px;}
+.header-nav-all ul a:last-child::before{content: "";position: absolute;top: 3px;left: 0;background-color: rgb(255 255 255 / 30%);width: 2px;height: 15px;}
+.header-become-sponsor{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;max-width: 150px;height: 51px;background-color: #F9BA34;border-bottom: 4px solid #3A3597;}
+.header-become-sponsor a{text-decoration: none;color: #242424;font-size: 16px;line-height: 21px;font-weight: 700;font-family: 'LotaGrotesqueBold';letter-spacing: -0.304px;padding: 20px 15px;}
+/* ====================display none in desktop mode========================= */
+.header-navbar-responsive{display: flex;flex-flow: row wrap;justify-content: center;align-content: center;width: 58px;height: 58px;border-radius: 50%;background-color: rgb(206 206 206 / 15%);row-gap: 7px;display: none;}
+.hamburger-line{width: 35px;height: 2px;background-color: #FFFFFF;}
+.upcoming-summits-all-responsive {display: flex;flex-flow: row wrap;justify-content: flex-start;align-content: flex-start;width: 32.31343284%;row-gap: 10px;display: none;}
+.upcoming-summits-all-responsive h6{font-size: 14px;line-height: 14px;font-weight: 600;font-family: 'LotaGrotesqueSemiBold';color: #BDBDBD;;}
+.upcoming-summits-all-responsive .upcoming-summits{display: flex;flex-flow: row wrap;justify-content: left;align-content: center;width: 100%;height: 84px;background-color: rgb(255 255 255 / 10%);padding: 14px 14px;position: relative;}
+
+.upcoming-summits-all-responsive .upcoming-summits em{font-size: 14px;line-height: 18px;font-weight: 700;font-family: 'LotaGrotesqueBold';color: #FFFFFF;margin-top: 2px;}
+.upcoming-summits-all-responsive .upcoming-summits p{font-size: 14px;line-height: 18px;font-weight: 700;font-family: 'LotaGrotesqueBold';color: #AAAAAA;margin-top: 5px;}
+.upcoming-summits-all-responsive .upcoming-summits img{position: absolute;top: 32px;right: 14px;}
+/* ====================display none in desktop mode========================= */
+
+
+
+.heros-wrap{float: left;width: 100%;position: relative;}
+.heros-wrap::before{position: absolute;content: "";top: 0;left: 0;width: 100%;height: 100%;background-color: rgb(29 27 75 / 50%);}
+.heros-wrap figure{width: 100%;}
+.heros-wrap figure img{width: 100%;object-fit: cover;}
+.heros-section-all{position: absolute;top: 241px;left: 0;width: 100%;}
+.heros-content-all{display: flex;flex-flow: row wrap;justify-content: space-between;width: 100%;}
+.heros-content{display: flex;flex-flow: row wrap;justify-content: left;align-content: flex-start;width: 34.432835821%;}
+.heros-content h6{font-size: 18px;line-height: 23px;font-weight: 700;font-family: 'LotaGrotesqueBold';letter-spacing: -0.304px;width: 100%;color: #F0725B;}
+.heros-content h1{font-size: 62px;line-height: 62px;font-weight: 400;font-family: 'LotaGrotesqueRegular';letter-spacing: -0.18px;width: 100%;color: #FFFFFF;margin-top: 14px;}
+.heros-upcoming-summits-btn{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;width: 49.10714286%;height: 63px;background-color: #F9BA34;border-bottom: 4px solid #3A3597;margin-top: 31px;}
+.heros-upcoming-summits-btn a{text-decoration: none;font-size: 18px;line-height: 23px;font-weight: 700;font-family: 'LotaGrotesqueBold';letter-spacing: -0.18px;color: #1E1E1E;padding: 20px 30px;}
+.upcoming-summits-all{display: flex;flex-flow: row wrap;justify-content: flex-start;align-content: flex-start;width: 32.31343284%;row-gap: 10px;margin-top: 335px;}
+.upcoming-summits-all h6{font-size: 14px;line-height: 14px;font-weight: 600;font-family: 'LotaGrotesqueSemiBold';color: #BDBDBD;}
+.upcoming-summits{display: flex;flex-flow: row wrap;justify-content: left;width: 100%;height: 103px;background-color: rgb(255 255 255 / 10%);padding: 15px 15px;position: relative;}
+.upcoming-summits h6{font-size: 14px;line-height: 18px;font-weight: 600;font-family: 'LotaGrotesqueSemiBold';color: #F0725B;width: 100%;}
+.upcoming-summits h6 span{font-size: 14px;line-height: 18px;font-weight: 400;font-family: 'LotaGrotesqueRegular';color: #BDBDBD;letter-spacing: 0.9px;margin-left: 10px;}
+.upcoming-summits p{font-size: 18px;line-height: 22px;font-weight: 600;font-family: 'LotaGrotesqueSemiBold';color: #FFFFFF;letter-spacing: -0.304px;width: 79.90762125%;margin-top: 10px;}
+.upcoming-summits img{position: absolute;top: 41px;right: 15px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sponsor-wrap{display: flex;flex-flow: row wrap;align-items: center;width: 100%;padding: 14px 0 47px 0;border-bottom: 1px solid #E8E8E8;}
+.sponsor-content{display: flex;flex-flow: row wrap;width: 100%;}
+.common-wrap h5{text-align: left;font-size: 14px;line-height: 14px;font-weight: 600;color: #939393;}
+
+
+
+
+
+
+
+.management-wrap{display: flex;flex-flow: row wrap;width: 100%;background-color: #F5F5F5;}
+.management-all{display: flex;flex-flow: row wrap;width: 100%;}
+.attend-wrap{display: flex;flex-flow: row wrap;width: 100%;margin-top: 93px;}
+.attend-wrap h4{text-align: left;color: #F0725B;font-size: 18px;line-height: 23px;font-weight: 700;font-family: 'LotaGrotesqueBold';width: 100%;}
+.attend-wrap h2{text-align: left;color: #1B1940;font-size: 48px;line-height: 52px;font-weight: 400;font-family: 'LotaGrotesqueRegular';width: 70.0746269%;margin-top: 11px;}
+.price-point-all{display: flex;flex-flow: row wrap;justify-content: space-between;width: 74.6268657%;row-gap: 64px;margin: 107px 0 145px 27%;}
+.price-point{display: flex;flex-flow: row wrap;justify-content: left;width: 29%;height: 131px;}
+.price-point figure{width: 100%;}
+.price-point-content{display: flex;flex-flow: row wrap;width: 100%;}
+.price-point-content h4{text-align: left;color: #282829;font-size: 18px;line-height: 23px;font-weight: 600;font-family: 'LotaGrotesqueSemiBold';letter-spacing: -0.18px;}
+.price-point-content p{text-align: left;color: #5F5F5F;font-size: 14px;line-height: 18px;font-family: 'LotaGrotesqueRegular';letter-spacing: -0.18px;}
+
+
+
+
+
+
+
+
+.upcoming-event-wrap{display: flex;flex-flow: row wrap;width: 100%;background-color: 
+    #F3F3F3;}
+.upcoming-event-all{display: flex;flex-flow: row wrap;justify-content: space-between;width: 100%;margin: 109px 0 121px 0;}
+.upcoming-event{display: flex;flex-flow: row wrap;justify-content: left;align-content: flex-start;width: 21.64179104%;}
+.upcoming-event h2{font-size: 48px;line-height: 52px;color: #1B1940;letter-spacing: -2px;font-family: 'LotaGrotesqueRegular';font-weight: 400;}
+.upcoming-event p{font-size: 14px;line-height: 20px;color: #5F5F5F;font-family: 'LotaGrotesqueRegular';font-weight: 400;width: 98%;}
+.view-all-upcoming-events{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;width: 100%;height: 63px;background-color: #F9BA34;border-bottom: 4px solid #3A3597;margin-top: 30px;}
+.view-all-upcoming-events a{text-decoration: none;font-size: 18px;line-height: 23px;font-weight: 700;font-family: 'LotaGrotesqueSemiBold';letter-spacing: -1px;color: #1E1E1E;padding: 20px 30px;}
+.machine-learning-all{display: flex;flex-flow: row wrap;justify-content: space-between;width: 74.626865671%;}
+.machine-learning{display: flex;flex-flow: row wrap;justify-content: left;align-items: flex-start;width: 32.4%;padding: 15px 15px;background-color: #FFFFFF;position: relative;}
+.machine-learning::before{position: absolute;content: "";top: 51px;left: 0;width: 100%;height: 1px;background-color: #E9EAF3;}
+.machine-learning h4{font-size: 24px;line-height: 24px;letter-spacing: -1px;font-weight: 400;font-family: 'LotaGrotesqueRegular';width: 100%;padding-bottom: 12px;}
+.machine-learning h4 span{font-size: 14px;line-height: 14px;font-weight: 600;font-family: 'LotaGrotesqueSemiBold';color: #1D1B4B;}
+.machine-learning figure{width: 100%;margin-top: 14px;}
+.machine-learning figure a img{width: 100%;}
+.machine-learning-executive-summit{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;width: 143px;height: 24px;background-color: #EBEBF5;margin-top: 12px;}
+.machine-learning-executive-summit a{text-decoration: none;font-size: 12px;line-height: 14px;font-weight: 600;font-family: 'LotaGrotesqueSemiBold';color: #3A3597;padding: 5px 10px;}
+.machine-learning h3{font-size: 22px;line-height: 24px;font-weight: 600;font-family: 'LotaGrotesqueSemiBold';color: #121132;margin-top: 14px;padding-bottom: 48px;}
+.machine-learning:nth-child(2) h3{padding-bottom: 25px;}
+.location{display: flex;flex-flow: row wrap;justify-content: space-between;width: 100%;position: relative;}
+.location figure{margin: 0;width: 12px;height: 17px;}
+.location figure img{width: 12px;height: 17px;}
+.location a{width: 269px;height: 36px;text-decoration: none;font-size: 14px;line-height: 18px;font-family: 'LotaGrotesqueRegular';font-weight: 400;color: #1E1E1E;}
+.location::before{position: absolute;top: -10px;left: -15px;content: "";width: 324px;height: 1px;background-color: #E9EAF3;}
+.location::after{position: absolute;top: 48px;left: -15px;content: "";width: 324px;height: 1px;background-color: #E9EAF3;}
+.location p{font-size: 14px;line-height: 16px;font-weight: 400;font-family: 'LotaGrotesqueRegular';color: #575252;margin-top: 30px;}
+.data-science{display: flex;flex-flow: row wrap;justify-content: left;align-items: center;width: 100%;height: 54px;margin-top: 20px;position: relative;}
+.data-science p{font-size: 14px;line-height: 16px;font-weight: 400;font-family: 'LotaGrotesqueRegular';color: #625d5d;}
+.data-science p a{color: #1E1E1E;}
+.data-science::after{position: absolute;top: 60px;left: -15px;content: "";width: 324px;height: 1px;background-color: #E9EAF3;}
+.view-event-details{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;width: 289px;height: 47px;background-color: #DADCE9;margin-top: 35px;}
+.view-event-details a{font-size: 14px;line-height: 18px;font-weight: 700;font-family: 'LotaGrotesqueSemiBold';color: #242424;letter-spacing: -1px;display: flex;flex-flow: row wrap;justify-content: center;align-items: center;column-gap: 5px;}
+.cxo-decession-maker-wrap{display: flex;flex-flow: row wrap;justify-content: center;width: 100%;position: relative;z-index: 1;}
+.cxo-decession-maker-wrap::before{position: absolute;top: 0;left: 0;content: "";width: 100%;height: 100%;background-image: linear-gradient(rgba(18, 17, 50, 0.2),#121132);}
+.cxo-decession-maker-wrap figure{width: 100%;}
+.cxo-decession-maker-wrap figure img{width: 100%;}
+.average-value-all{display: flex;flex-flow: row wrap;justify-content: space-between;align-items: center;width: 100%;z-index: 3;margin-top: -420px;}
+.average-value{display: flex;flex-flow: row wrap;width: 32.313433%;height: 187px;background-color: rgba(206, 206, 206, 0.15)
+    ;justify-content: center;}
+.average-value h2{font-size: 72px;line-height: 72px;font-weight: 400;font-family: 'LotaGrotesqueRegular';color: #F0725B;letter-spacing: -1px;margin-top: 50px;}
+.average-value p{font-size: 22px;line-height: 26px;text-align: center;font-weight: 700;font-family: 'LotaGrotesqueBold';color: #FFFFFF;width: 73.90300231%;margin-top: -35px;}
+.become-a-sponsor-all{display: flex;flex-flow: row wrap;justify-content: center;width: 100%;background-color: #121132;}
+.become-a-sponsor{display: flex;flex-flow: row wrap;justify-content: space-between;width: 100%;margin-bottom: 136px;}
+.achieve-tangible{display: flex;flex-flow: row wrap;width: 63.50746269%;}
+.achieve-tangible h4{font-size: 18px;line-height: 23px;font-weight: 700;font-family: 'LotaGrotesqueBold';color: #F0725B;width: 100%;margin-top: 103px;letter-spacing: -1px;}
+.achieve-tangible h2{font-size: 48px;line-height: 52px;font-weight: 400;font-family: 'LotaGrotesqueRegular';letter-spacing: -1px;width: 100%;margin-top: 11px;color: #FFFFFF;}
+.achieve-tangible-btn-all{display: flex;flex-flow: row wrap;justify-content: space-between;width: 27.0149254%;margin-top: 137px;}
+.become-a-sponsor-btn{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;width: 58.2873%;background-color: #F9BA34;height: 63px;border-bottom: 4px solid #3A3597;}
+.become-a-sponsor-btn a{font-size: 18px;line-height: 23px;font-weight: 700;font-family: 'LotaGrotesqueBold';color: #1E1E1E;letter-spacing: -1px;padding: 20px 30px;text-decoration: none;}
+.find-more-btn{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;width: 38.95028%;height: 63px;background-color: #3A3597;}
+.find-more-btn a{font-size: 18px;line-height: 23px;font-weight: 700;font-family: 'LotaGrotesqueBold';color: #FFFFFF;letter-spacing: -1px;padding: 20px 30px;text-decoration: none;}
+.establish-brand-image-all{display: flex;flex-flow: row wrap;justify-content: space-between;width: 100%;}
+.establish-brand-image{display: flex;flex-flow: row wrap;justify-content: center;width: 23.8806%;height: 322px;background-color: #191842;margin-bottom: 104px;padding: 32px 24px 48px 24px;}
+.establish-brand-image figure{width: 100%;height: 80px;display: flex;flex-flow: row wrap;justify-content: center;align-items: center;}
+/* .establish-brand-image figure img{width: 100%;} */
+.establish-brand-image h4{font-size: 18px;line-height: 23px;font-weight: 700;font-family: 'LotaGrotesqueBold';text-align: center;color: #FFFFFF;letter-spacing: -0.304px;margin-top: 22px;}
+.establish-brand-image p{font-size: 18px;line-height: 23px;text-align: center;font-weight: 400px;font-family: 'LotaGrotesqueRegular';letter-spacing: -0.304px;color: #FFFFFF;padding: 0 9px;}
+.establish-brand-image p em{width: 100%;float: left;}
+.sponsor-community-all{display: flex;flex-flow: row wrap;justify-content: center;width: 100%;background-color: #121132;padding-bottom: 60px;}
+.sponsor-community{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;width: 100%;position: relative;z-index: 1;}
+.sponsor-community::before{content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-image: linear-gradient(#1d1b4bc4,#f0725bad);}
+.sponsor-community-content{display: flex;flex-flow: column wrap;justify-content: center;align-items: center;width: 100%;z-index: 111;position: absolute;top: 162px;left: 0;}
+.sponsor-community-content h2{font-size: 48px;line-height: 53px;font-family: 'LotaGrotesqueSemiBold';color: #FFFFFF;letter-spacing: -1px;width: 52.2537313%;text-align: center;}
+.sponsor-community-content p{font-size: 16px;line-height: 21px;font-weight: 400;font-family: 'LotaGrotesqueRegular';color: #FFFFFF;letter-spacing: 0px;width: 49.2537313%;text-align: center;margin-top: 8px;padding: 0 9px;}
+.join-cxo-club{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;width: 15.4477612%;height: 63px;background-color: #F9BA34;border-bottom: 4px solid #3A3597;margin-top: 29px;}
+.join-cxo-club a{text-decoration: none;font-size: 18px;line-height: 23px;font-weight: 700;font-family: 'LotaGrotesqueBold';color: #1E1E1E;padding: 20px 30px;letter-spacing: -0.18px;}
+.insights-company-updates-all{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;width: 100%;}
+.insights-company-updates{display: flex;flex-flow: row wrap;justify-content: space-between;align-items: center;width: 100%;margin: 104px 0px 127px 0;}
+.insights-company{display: flex;flex-flow: row wrap;justify-content: left;width: 40.313433%;}
+.insights-company h6{font-size: 18px;line-height: 23px;font-weight: 700;font-family: 'LotaGrotesqueBold';color: #F0725B;width: 100%;letter-spacing: -0.342px;}
+.insights-company h2{font-size: 48px;line-height: 48px;font-weight: 400;font-family: 'LotaGrotesqueRegular';color: 
+    #193028;width: 100%;letter-spacing: -0.72px;margin-top: 15px;}
+.insights-company p{font-size: 16px;line-height: 21px;font-weight: 400;font-family: 'LotaGrotesqueRegular';color: 
+    #151515;width: 100%;letter-spacing: -0.342px;margin-top: 15px;}
+.keep-reading{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;width: 12.8358209%;height: 63px;background-color: #F9BA34;border-bottom: 4px solid #3A3597;}
+.keep-reading a{text-decoration: none;font-size: 18px;line-height: 23px;font-weight: 700;font-family: 'LotaGrotesqueBold';color: #1E1E1E;letter-spacing: -0.18px;padding: 20px 30px;}
+.autonomus-slider-all-for-slider{display: flex;flex-flow: row wrap;justify-content: space-between;width: 100%;}
+.autonomus-slider-all{display: flex;flex-flow: row wrap;justify-content: center;width: 60px;row-gap: 10px;}
+.autonomus-slider{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;width: 100%;height: 60px;border-radius: 50%;background-color: #E2E4E2;}
+/* .autonomus-slider figure{width: 100%;}
+.autonomus-slider figure img{width: 100%;} */
+
+
+
+
+
+
+
+
+
+
+.footer-wrap{float:left;width: 100%;background-color: #121132;position: relative;}
+.footer-wrap::after{position: absolute;content: "";background-color: rgb(255 255 255 / 60%);height: 1px;width: 100%;top: 197px;left: 0;}
+.footer-wrap::before{position: absolute;content: "";background-color: rgb(255 255 255 / 60%);height: 1px;width: 100%;bottom: 85px;left: 0;}
+
+.news-letter-all{display: flex;flex-flow: row wrap;justify-content: space-between;align-items: center;width: 100%;padding: 51px 0;}
+.news-letter{display: flex;flex-flow: column wrap;justify-content: left;width: 31.865672%;}
+.news-letter h6{font-size: 18px;line-height: 23px;font-weight: 700;font-family: 'LotaGrotesqueBold';width: 100%;color: #F0725B;letter-spacing: -0.342px;}
+.news-letter h2{font-size: 28px;line-height: 34px;font-weight: 600;font-family: 'LotaGrotesqueSemiBold';width: 100%;color: 
+    #FFFFFF;margin-top: 5px;}
+.news-letter-all-btn-all{display: flex;flex-flow: row wrap;justify-content: space-between;align-items: center;width: 32.31343284%;position: relative;}
+.news-letter-form{display: flex;flex-flow: row wrap;justify-content: right;align-items: center;width: 100%;}
+.news-letter-form input{width: 100%;height: 63px;border: 2px solid #3A3597;border-right: none;background-color: #121132;}
+.news-letter-form input::placeholder{padding: 26px 0 20px 23px;color: #FFFFFF;font-size: 14px;line-height: 14px;font-weight: 400;font-family: 'LotaGrotesqueRegular';opacity: 60%;}
+.news-letter-all-sign-up-btn{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;min-width: 123px;height: 61px;border-bottom: 1px solid #3A3597;background-color: #F9BA34;position: absolute;top: 0;right: 0;}
+.news-letter-all-sign-up-btn a{text-decoration: none;font-size: 18px;line-height: 23px;font-weight: 700;font-family: 'LotaGrotesqueBold';color: #1E1E1E;padding: 20px 28px;letter-spacing: -0.342px;}
+.cxo-era-footer{display: flex;flex-flow: row wrap;justify-content: space-between;width: 100%;padding: 140px 0 129px 0;}
+.cxo-footer-logo{display: flex;flex-flow: column wrap;justify-content: left;width: 15.149254%;}
+.cxo-era-address-container{display: flex;flex-flow: row wrap;justify-content: left;width: 100%;margin-top: 54px;}
+.cxo-era-address-container p{font-size: 16px;line-height: 22px;font-weight: 400;font-family: 'LotaGrotesqueRegular';color: rgb(255 255 255 / 60%);width: 100%;}
+.cxo-era-address-container p em{font-size: 16px;line-height: 22px;font-weight: 700;font-family: 'LotaGrotesqueBold';color: #FFFFFF;width: 100%;float: left;font-style: normal;}
+.cxo-era-address-container p em:last-child{color: rgb(255 255 255 / 60%);}
+.footer-navigation-bar-all{display: flex;flex-flow: row wrap;justify-content: left;width: 7.3880597%;}
+.footer-navigation-bar{display: flex;flex-flow: row wrap;justify-content: left;width: 100%;}
+.footer-navigation-bar ul{float: left;list-style: none;width: 100%;}
+.footer-navigation-bar ul li{display: flex;flex-flow: row wrap;justify-content: center;width: 100%;color: #FFFFFF;font-size: 16px;line-height: 18px;}
+.footer-navigation-bar ul li:first-child{padding: 16px 0 50px 0;font-weight: 700;font-family: 'LotaGrotesqueBold';color: #ffffff94;}
+.footer-navigation-bar ul li a{font-size: 16px;line-height: 24px;text-decoration: none;font-weight: 400;font-family: 'LotaGrotesqueRegular';color: #FFFFFF;padding-bottom: 3px;}
+.footer-navigation-bar-all-summits{display: flex;flex-flow: row wrap;justify-content: left;width: 10.74626866%;}
+.footer-navigation-bar-summits{display: flex;flex-flow: row wrap;justify-content: left;width: 100%;}
+.footer-navigation-bar-summits ul{float: left;list-style: none;width: 100%;}
+.footer-navigation-bar-summits ul li{display: flex;flex-flow: row wrap;justify-content: center;width: 100%;color: #FFFFFF;font-size: 16px;line-height: 18px;}
+.footer-navigation-bar-summits ul li:first-child{padding: 16px 0 50px 0;font-weight: 700;font-family: 'LotaGrotesqueBold';color: #ffffff94;}
+.footer-navigation-bar-summits ul li a{font-size: 16px;line-height: 24px;text-decoration: none;font-weight: 400;font-family: 'LotaGrotesqueRegular';color: #FFFFFF;padding-bottom: 3px;}
+.footer-upcoming-summits{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;width: 32.313433%;margin-top: 16px;}
+.footer-upcoming-summits .heros-content{width: 100%;}
+.copyright-all{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;width: 100%;position: relative;padding: 32px 0;}
+.copyright-all p{font-size: 14px;line-height: 14px;font-weight: 400;font-family: 'LotaGrotesqueRegular';color: rgb(255 255 255 / 40%);display: flex;flex-flow: row wrap;justify-content: space-between;align-items: center;width: 15.7455224%;}
+.copyright-all p a{text-decoration: none;color: #FFFFFF;font-size: 14px;line-height: 20px;font-weight: 400;font-family: 'LotaGrotesqueRegular';display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    column-gap: 10px}
+
+
+.footer-position{position: absolute;bottom: 30px;left: 0;}
+.footer-position h3{font-size: 16px;line-height: 21px;font-weight: 400;font-family: 'LotaGrotesqueRegular';color: rgb(255 255 255 / 40%);}
+.copyright-all-responsive{display: none;}
+
+
+
+/* ==================================================================RESPONSIVE=============================================================== */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+
+
+    .header-nav-all{display: none;}
+    .header-navbar-responsive{display: flex;}
+
+.header-all{justify-content: space-between;padding: 18px 0 21px 0;}
+.header-logo{justify-content: left;width: 45%;}
+.heros-wrap{width: 100%;height: 730px;}
+.heros-wrap figure{width: 100%;height: 100%;}
+.heros-wrap figure img{width: 100%;height: 100%;object-fit: cover;}
+.heros-wrap::after{top: 70px;}
+.heros-section-all{top: 113px;}
+.heros-content-all{justify-content: left;}
+.heros-content{width: 100%;}
+.heros-content h6{font-size: 14px;line-height: 20px;}
+.heros-content h1{font-size: 48px;line-height: 48px;letter-spacing: -0.48px;margin-top: 5px;}
+.heros-upcoming-summits-btn{width: 64%;}
+.upcoming-summits-all{display: none;}
+.upcoming-summits-all-responsive{display: flex;width: 100%;margin-top: 31px;}
+
+
+
+
+
+
+
+.upcomming-summits {width: 220px;margin-top: 35px;}
+.upcomming-summits a{padding: 20px 28px;}
+.management-all{justify-content: left;}
+.attend-wrap{justify-content: left;margin-top: 60px;}
+.attend-wrap h2{font-size: 28px;line-height: 34px;margin-top: 10px;width: 95%;}
+.price-point-all{justify-content: left;width: 100%;row-gap: 0;margin: 0;}
+.price-point{justify-content: space-between;align-items: center;height: auto;width: 100%;padding: 20px 35px 20px 15px;position: relative;}
+.price-point figure{width: 15%;}
+.price-point-content{width: 75%;align-items: center;}
+.price-point::after{position: absolute;content: "";bottom: 0;left: 0;background-color: #EFEFEF;width: 100%;height: 1px;}
+.price-point:last-child::after{display: none;}
+.upcoming-event-all{justify-content: center;margin: 50px 0 0 0;}
+.upcoming-event{justify-content: center;align-content: center;width: 100%;}
+.upcoming-event h2{font-size: 36px;line-height: 43px;text-align: center;letter-spacing: -.18px;}
+.upcoming-event p{font-size: 14px;line-height: 20px;text-align: center;width: 100%;}
+.view-all-upcoming-events{width: 266px;}
+.machine-learning-all{justify-content: center;width: 100%;margin-top: 60px;}
+.machine-learning{width: 100%;margin-bottom: 30px;}
+.machine-learning:last-child{margin-bottom: 0;}
+.location{align-items: center;}
+.location figure{width: 10%;}
+.location a{width: 288px;padding-right: 15px;}
+.data-science{justify-content: left;}
+.average-value-all{row-gap: 10px;justify-content: center;margin-top: -610px;}
+.average-value{width: 330px;}
+.become-a-sponsor{justify-content: center;width: 100%;margin-bottom: 20px;}
+.achieve-tangible{justify-content: center;width: 100%;}
+.achieve-tangible h4{text-align: center;font-size: 14px;line-height: 14px;}
+.achieve-tangible h2{font-size: 28px;line-height: 34px;text-align: center;padding: 0 10px;}
+.achieve-tangible-btn-all{width: 100%;margin-top: 10px;}
+.establish-brand-image-all{justify-content: center;}
+.establish-brand-image{width: 100%;margin-bottom: 10px;}
+
+
+
+
+
+
+
+
+
+.insights-company-updates{justify-content: center;margin: 30px 0 60px 0;}
+.insights-company{justify-content: center;width: 100%;}
+.insights-company h6{font-size: 14px;line-height: 14px;text-align: center;}
+.insights-company h2{font-size: 36px;line-height: 43px;text-align: center;margin-top: 10px;}
+.insights-company p{display: none;}
+.keep-reading{width: 171px;margin-top: 10px;}
+.keep-reading a{padding: 20px 29px;}
+.news-letter-all{justify-content: left;width: 100%;padding: 25px 0 21px 0;}
+.news-letter{flex-flow: row wrap;justify-content: left;width: 100%;}
+.news-letter h6{font-size: 14px;line-height: 14px;}
+.news-letter h2{font-size: 22px;line-height: 26px;margin-top: 12px;}
+.news-letter-all-btn-all{width: 100%;margin-top: 21px;}
+.footer-wrap::after{top: 235px;}
+.cxo-era-footer{justify-content: left;}
+.cxo-footer-logo{flex-flow: row wrap;justify-content: left;width: 100%;}
+.footer-navigation-bar-all-summits{width: 100%;}
+.footer-navigation-bar ul li{justify-content: left;}
+.footer-navigation-bar-summits ul li{justify-content: left;}
+.footer-upcoming-summits{width: 100%;}
+.cxo-era-footer{padding: 48px 0 21px 0;}
+.footer-wrap::before{display: none;}
+
+.copyright-all-responsive{display: visible;display: flex;flex-flow: row wrap;justify-content: space-between;align-items: center;width: 100%;background-color: #0A0926;padding: 14px 10px;margin-bottom: 21px;}
+.cxo-era-footer-left-responsive{display: flex;flex-flow: row wrap;width: 25.358208955%;}
+.cxo-era-footer-left-responsive h3{font-size: 12px;line-height: 12px;font-weight: 400;font-family: 'LotaGrotesqueRegular';color: #FFFFFF;}
+.cxo-era-footer-right-responsive{display: flex;flex-flow: row wrap;justify-content: center;align-items: center;width: 62%;}
+.cxo-era-footer-right-responsive p{font-size: 14px;line-height: 14px;font-weight: 400;font-family: 'LotaGrotesqueRegular';color: rgb(255 255 255 / 40%);display: flex;flex-flow: row wrap;justify-content: space-between;align-items: center;width: 100%;}
+.cxo-era-footer-right-responsive p a{text-decoration: none;color: #FFFFFF;font-size: 14px;line-height: 20px;font-weight: 400;font-family: 'LotaGrotesqueRegular';display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    column-gap: 10px}
+    .copyright-all{display: none;}
+    .footer-position{display: none;}
+   .footer-upcoming-summits .heros-content{padding-bottom: 0;}
+   .footer-navigation-bar-summits ul li:first-child{padding-bottom: 10px;}
+   .cxo-decession-maker-wrap{height: 635px;}
+   .cxo-decession-maker-wrap figure{width: 100%;height: 100%;}
+   .cxo-decession-maker-wrap figure img{width: 100%;height: 100%;object-fit: cover;}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
